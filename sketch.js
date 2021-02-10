@@ -39,11 +39,12 @@ function setup(){
     bird = new Bird(100,100);
 
     //log6 = new Log(230,180,80, PI/2);
-    slingshot = new SlingShot(bird.body,{x:200, y:100});
+    slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
 
 function draw(){
     background(backgroundImg);
+    showGrid();
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
